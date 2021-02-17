@@ -12,14 +12,16 @@ struct ContentView: View {
         NavigationView {
             Form {
                 // ViewBuilder supports only no more than 10 static views in one container.
-                NavigationLink(destination: ViewListOne()) {
-                    Text("ViewListOne")
-                }
-                NavigationLink(destination: ViewListTwo()) {
-                    Text("ViewListTwo")
-                }
-                NavigationLink(destination: ViewListThree()) {
-                    Text("ViewListThree")
+                Section(header: Text("Controls")) {
+                    NavigationLink(destination: ViewListOne()) {
+                        Text("Button ... List")
+                    }
+                    NavigationLink(destination: ViewListTwo()) {
+                        Text("NavigationLink ... TabView")
+                    }
+                    NavigationLink(destination: ViewListThree()) {
+                        Text("Text ... Toggle")
+                    }
                 }
             }
         }
@@ -139,7 +141,7 @@ struct ViewListOne: View {
             .textCase(nil)
 
         }
-        .navigationTitle("ViewListOne")
+        .navigationTitle("Button ... List")
     }
 }
 
@@ -232,7 +234,7 @@ struct ViewListTwo: View {
             .textCase(nil)
 
         }
-        .navigationTitle("ViewListTwo")
+        .navigationTitle("NavigationLink ... TabView")
     }
 }
 
@@ -269,6 +271,6 @@ struct ViewListThree: View {
             }
             .textCase(nil)
         }
-        .navigationTitle("ViewListThree")
+        .navigationTitle("Text ... Toggle")
     }
 }
