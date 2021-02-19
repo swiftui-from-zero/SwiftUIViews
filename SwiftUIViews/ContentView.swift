@@ -13,17 +13,25 @@ struct ContentView: View {
             Form {
                 // ViewBuilder supports only no more than 10 static views in one container.
                 Section(header: Text("Controls")) {
-                    NavigationLink(destination: ViewListOne()) {
+                    NavigationLink(destination: ControlListOne()) {
                         Text("Button ... List")
                     }
-                    NavigationLink(destination: ViewListTwo()) {
+                    NavigationLink(destination: ControlListTwo()) {
                         Text("NavigationLink ... TabView")
                     }
-                    NavigationLink(destination: ViewListThree()) {
+                    NavigationLink(destination: ControlListThree()) {
                         Text("Text ... Toggle")
                     }
                 }
+                Section(header: Text("Layout")) {
+                    NavigationLink(
+                        destination: LayoutList(),
+                        label: {
+                            Text("GeometryReader ... ZStack")
+                        })
+                }
             }
+            .navigationTitle("SwiftUIViews")
         }
     }
 }
@@ -34,7 +42,7 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct ViewListOne: View {
+struct ControlListOne: View {
     var body: some View {
         Form {
             Section(header: Text("Button")) {
@@ -145,7 +153,7 @@ struct ViewListOne: View {
     }
 }
 
-struct ViewListTwo: View {
+struct ControlListTwo: View {
     var body: some View {
         Form {
             Section(header: Text("NavigationLink")) {
@@ -238,7 +246,7 @@ struct ViewListTwo: View {
     }
 }
 
-struct ViewListThree: View {
+struct ControlListThree: View {
     var body: some View {
         Form {
             Section(header: Text("Text")) {
@@ -272,5 +280,86 @@ struct ViewListThree: View {
             .textCase(nil)
         }
         .navigationTitle("Text ... Toggle")
+    }
+}
+
+struct LayoutList: View {
+    var body: some View {
+        Form {
+            Section(header: Text("GeometryReader")) {
+                NavigationLink(destination: BasicGeometryReader()) {
+                    Text("BasicGeometryReader")
+                }
+                NavigationLink(destination: SafeAreaGeometryReader()) {
+                    Text("SafeAreaGeometryReader")
+                }
+                NavigationLink(destination: FrameGeometryReader()) {
+                    Text("FrameGeometryReader")
+                }
+            }
+            .textCase(nil)
+
+            Section(header: Text("HStack")) {
+                NavigationLink(destination: BasicHStack()) {
+                    Text("BasicHStack")
+                }
+                NavigationLink(destination: LayerPriorityBasicHStack()) {
+                    Text("LayerPriorityBasicHStack")
+                }
+            }
+            .textCase(nil)
+
+            Section(header: Text("LazyHStack")) {
+                NavigationLink(destination: BasicLazyHStack()) {
+                    Text("BasicLazyHStack")
+                }
+            }
+            .textCase(nil)
+
+            Section(header: Text("LazyVStack")) {
+                NavigationLink(destination: BasicLazyVStack()) {
+                    Text("BasicLazyVStack")
+                }
+            }
+            .textCase(nil)
+
+            Section(header: Text("ScrollViewReader")) {
+                NavigationLink(destination: BasicScrollViewReader()) {
+                    Text("BasicScrollViewReader")
+                }
+            }
+            .textCase(nil)
+
+            Section(header: Text("Spacer")) {
+                NavigationLink(destination: BasicSpacer()) {
+                    Text("BasicSpacer")
+                }
+            }
+            .textCase(nil)
+
+            Section(header: Text("VStack")) {
+                NavigationLink(destination: BasicVStack()) {
+                    Text("BasicVStack")
+                }
+                NavigationLink(destination: LayerPriorityBasicVStack()) {
+                    Text("LayerPriorityBasicVStack")
+                }
+            }
+            .textCase(nil)
+            
+            Section(header: Text("ZStack")) {
+                NavigationLink(destination: BasicZStack()) {
+                    Text("BasicZStack")
+                }
+                NavigationLink(destination: IgnoreSafeZStack()) {
+                    Text("IgnoreSafeZStack")
+                }
+                NavigationLink(destination: ZIndexZStack()) {
+                    Text("ZIndexZStack")
+                }
+            }
+            .textCase(nil)
+        }
+        .navigationTitle("GeometryReader ... ZStack")
     }
 }

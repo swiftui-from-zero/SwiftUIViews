@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B302755225DFB79F001D7703 /* GeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B302755125DFB79F001D7703 /* GeometryReader.swift */; };
+		B302755525DFC621001D7703 /* HStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B302755425DFC621001D7703 /* HStack.swift */; };
+		B3396FAA25DD17510025C7E3 /* ZStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3396FA925DD17510025C7E3 /* ZStack.swift */; };
 		B34D2AAD25CEE84D000361B0 /* SwiftUIViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34D2AAC25CEE84D000361B0 /* SwiftUIViewsApp.swift */; };
 		B34D2AAF25CEE84D000361B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34D2AAE25CEE84D000361B0 /* ContentView.swift */; };
 		B34D2AB125CEE84F000361B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B34D2AB025CEE84F000361B0 /* Assets.xcassets */; };
@@ -21,6 +24,11 @@
 		B3527D6C25CFEA480022E1B9 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3527D6B25CFEA480022E1B9 /* ScrollView.swift */; };
 		B3527D6F25CFEF030022E1B9 /* NavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3527D6E25CFEF030022E1B9 /* NavigationLink.swift */; };
 		B3527D7425CFFF360022E1B9 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3527D7325CFFF360022E1B9 /* NavigationView.swift */; };
+		B376D44A25DFF8CF0083488A /* LazyHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B376D44925DFF8CF0083488A /* LazyHStack.swift */; };
+		B376D44D25DFFA230083488A /* LazyVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B376D44C25DFFA230083488A /* LazyVStack.swift */; };
+		B376D45025DFFABE0083488A /* Spacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B376D44F25DFFABE0083488A /* Spacer.swift */; };
+		B376D45325DFFD4B0083488A /* VStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B376D45225DFFD4B0083488A /* VStack.swift */; };
+		B376D45625DFFF8B0083488A /* ScrollViewReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B376D45525DFFF8B0083488A /* ScrollViewReader.swift */; };
 		B3B52E9725CF82EF00F71D03 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B52E9625CF82EF00F71D03 /* ColorPicker.swift */; };
 		B3B52E9A25CF856D00F71D03 /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B52E9925CF856D00F71D03 /* DatePicker.swift */; };
 		B3B52E9D25CF8A5300F71D03 /* DisclosureGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B52E9C25CF8A5300F71D03 /* DisclosureGroup.swift */; };
@@ -39,6 +47,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B302755125DFB79F001D7703 /* GeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReader.swift; sourceTree = "<group>"; };
+		B302755425DFC621001D7703 /* HStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStack.swift; sourceTree = "<group>"; };
+		B3396FA925DD17510025C7E3 /* ZStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStack.swift; sourceTree = "<group>"; };
 		B34D2AA925CEE84D000361B0 /* SwiftUIViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B34D2AAC25CEE84D000361B0 /* SwiftUIViewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewsApp.swift; sourceTree = "<group>"; };
 		B34D2AAE25CEE84D000361B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +66,11 @@
 		B3527D6B25CFEA480022E1B9 /* ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
 		B3527D6E25CFEF030022E1B9 /* NavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLink.swift; sourceTree = "<group>"; };
 		B3527D7325CFFF360022E1B9 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
+		B376D44925DFF8CF0083488A /* LazyHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyHStack.swift; sourceTree = "<group>"; };
+		B376D44C25DFFA230083488A /* LazyVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVStack.swift; sourceTree = "<group>"; };
+		B376D44F25DFFABE0083488A /* Spacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacer.swift; sourceTree = "<group>"; };
+		B376D45225DFFD4B0083488A /* VStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStack.swift; sourceTree = "<group>"; };
+		B376D45525DFFF8B0083488A /* ScrollViewReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewReader.swift; sourceTree = "<group>"; };
 		B3B52E9625CF82EF00F71D03 /* ColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
 		B3B52E9925CF856D00F71D03 /* DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
 		B3B52E9C25CF8A5300F71D03 /* DisclosureGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclosureGroup.swift; sourceTree = "<group>"; };
@@ -83,6 +99,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B3396FA825DD171F0025C7E3 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				B302755125DFB79F001D7703 /* GeometryReader.swift */,
+				B302755425DFC621001D7703 /* HStack.swift */,
+				B376D44925DFF8CF0083488A /* LazyHStack.swift */,
+				B376D44C25DFFA230083488A /* LazyVStack.swift */,
+				B376D45525DFFF8B0083488A /* ScrollViewReader.swift */,
+				B376D44F25DFFABE0083488A /* Spacer.swift */,
+				B376D45225DFFD4B0083488A /* VStack.swift */,
+				B3396FA925DD17510025C7E3 /* ZStack.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
 		B34D2AA025CEE84D000361B0 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +136,7 @@
 				B34D2AAC25CEE84D000361B0 /* SwiftUIViewsApp.swift */,
 				B34D2AAE25CEE84D000361B0 /* ContentView.swift */,
 				B34D2AC525CEEA4A000361B0 /* Controls */,
+				B3396FA825DD171F0025C7E3 /* Layout */,
 				B34D2AB025CEE84F000361B0 /* Assets.xcassets */,
 				B34D2AB525CEE84F000361B0 /* Info.plist */,
 				B34D2AB225CEE84F000361B0 /* Preview Content */,
@@ -226,26 +258,34 @@
 				B3527D6625CFD3F60022E1B9 /* TextField.swift in Sources */,
 				B3B52E9725CF82EF00F71D03 /* ColorPicker.swift in Sources */,
 				B3B52EA025CF8C5400F71D03 /* EditButton.swift in Sources */,
+				B376D45025DFFABE0083488A /* Spacer.swift in Sources */,
 				B3B52EC325CFBA6B00F71D03 /* Slider.swift in Sources */,
 				B3B52EAD25CFA30B00F71D03 /* Link.swift in Sources */,
 				B3B52EB025CFA67500F71D03 /* List.swift in Sources */,
 				B3B52E9D25CF8A5300F71D03 /* DisclosureGroup.swift in Sources */,
+				B376D44A25DFF8CF0083488A /* LazyHStack.swift in Sources */,
 				B34D2AC325CEE9EC000361B0 /* Button.swift in Sources */,
 				B3B52EBF25CFB79A00F71D03 /* SecureField.swift in Sources */,
 				B3527D5C25CFCDDC0022E1B9 /* OutlineGroup.swift in Sources */,
 				B34D2AAD25CEE84D000361B0 /* SwiftUIViewsApp.swift in Sources */,
 				B3B52EB325CFA69B00F71D03 /* Toggle.swift in Sources */,
+				B302755225DFB79F001D7703 /* GeometryReader.swift in Sources */,
 				B3527D5825CFCA8B0022E1B9 /* TabView.swift in Sources */,
 				B3B52EB625CFA8C600F71D03 /* Text.swift in Sources */,
 				B3B52E9A25CF856D00F71D03 /* DatePicker.swift in Sources */,
 				B3B52EAA25CF96B500F71D03 /* Label.swift in Sources */,
+				B376D45625DFFF8B0083488A /* ScrollViewReader.swift in Sources */,
 				B3527D6325CFD13B0022E1B9 /* TextEditor.swift in Sources */,
 				B3527D7425CFFF360022E1B9 /* NavigationView.swift in Sources */,
+				B376D44D25DFFA230083488A /* LazyVStack.swift in Sources */,
 				B3B52EBC25CFB42400F71D03 /* ProgressView.swift in Sources */,
 				B3B52EB925CFABF300F71D03 /* Picker.swift in Sources */,
 				B3527D6925CFE6450022E1B9 /* Section.swift in Sources */,
+				B376D45325DFFD4B0083488A /* VStack.swift in Sources */,
+				B3396FAA25DD17510025C7E3 /* ZStack.swift in Sources */,
 				B3527D6F25CFEF030022E1B9 /* NavigationLink.swift in Sources */,
 				B3527D5525CFC5FC0022E1B9 /* Stepper.swift in Sources */,
+				B302755525DFC621001D7703 /* HStack.swift in Sources */,
 				B3527D6C25CFEA480022E1B9 /* ScrollView.swift in Sources */,
 				B3B52EA725CF942F00F71D03 /* GroupBox.swift in Sources */,
 			);
