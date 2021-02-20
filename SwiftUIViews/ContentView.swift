@@ -92,6 +92,9 @@ struct ControlListOne: View {
                 NavigationLink(destination: BasicEditButton()) {
                     Text("BasicEditButton")
                 }
+                NavigationLink(destination: CustomEditButton()) {
+                    Text("CustomEditButton")
+                }
             }
             .textCase(nil)
 
