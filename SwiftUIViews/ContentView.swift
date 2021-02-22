@@ -425,7 +425,7 @@ struct OtherSection: View {
             NavigationLink(
                 destination: OtherList(),
                 label: {
-                    Text("Menu")
+                    Text("Divider ... Shapes")
                 })
         }
     }
@@ -434,6 +434,18 @@ struct OtherSection: View {
 struct OtherList: View {
     var body: some View {
         Form {
+            Section(header: Text("Divider")) {
+                NavigationLink(destination: BasicDivider()) {
+                    Text("BasicDivider")
+                }
+            }
+            .textCase(nil)
+            Section(header: Text("EmptyView")) {
+                NavigationLink(destination: BasicEmptyView()) {
+                    Text("BasicEmptyView")
+                }
+            }
+            .textCase(nil)
             Section(header: Text("Menu")) {
                 NavigationLink(destination: BasicMenu()) {
                     Text("BasicMenu")
@@ -443,8 +455,14 @@ struct OtherList: View {
                 }
             }
             .textCase(nil)
+            Section(header: Text("Shapes")) {
+                NavigationLink(destination: BasicShapes()) {
+                    Text("BasicShapes")
+                }
+            }
+            .textCase(nil)
         }
-        .navigationTitle("Menu")
+        .navigationTitle("Divider ... Shapes")
     }
 }
 

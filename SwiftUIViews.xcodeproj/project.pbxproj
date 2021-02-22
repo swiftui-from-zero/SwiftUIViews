@@ -48,6 +48,9 @@
 		B3B52EBF25CFB79A00F71D03 /* SecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B52EBE25CFB79A00F71D03 /* SecureField.swift */; };
 		B3B52EC325CFBA6B00F71D03 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B52EC225CFBA6B00F71D03 /* Slider.swift */; };
 		B3D66B5825E3C1AE0026DAF9 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D66B5725E3C1AE0026DAF9 /* Menu.swift */; };
+		B3E1BBBB25E3E77300D3515B /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E1BBBA25E3E77300D3515B /* Shapes.swift */; };
+		B3E1BBBE25E3EBE100D3515B /* Divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E1BBBD25E3EBE100D3515B /* Divider.swift */; };
+		B3E1BBC225E3ED7100D3515B /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E1BBC125E3ED7100D3515B /* EmptyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +97,9 @@
 		B3B52EBE25CFB79A00F71D03 /* SecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureField.swift; sourceTree = "<group>"; };
 		B3B52EC225CFBA6B00F71D03 /* Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
 		B3D66B5725E3C1AE0026DAF9 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		B3E1BBBA25E3E77300D3515B /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
+		B3E1BBBD25E3EBE100D3515B /* Divider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Divider.swift; sourceTree = "<group>"; };
+		B3E1BBC125E3ED7100D3515B /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,7 +213,10 @@
 		B3D66B5625E3C18E0026DAF9 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				B3E1BBBD25E3EBE100D3515B /* Divider.swift */,
+				B3E1BBC125E3ED7100D3515B /* EmptyView.swift */,
 				B3D66B5725E3C1AE0026DAF9 /* Menu.swift */,
+				B3E1BBBA25E3E77300D3515B /* Shapes.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -308,9 +317,11 @@
 				B3B52EAA25CF96B500F71D03 /* Label.swift in Sources */,
 				B376D45625DFFF8B0083488A /* ScrollViewReader.swift in Sources */,
 				B3527D6325CFD13B0022E1B9 /* TextEditor.swift in Sources */,
+				B3E1BBBB25E3E77300D3515B /* Shapes.swift in Sources */,
 				B3527D7425CFFF360022E1B9 /* NavigationView.swift in Sources */,
 				B376D44D25DFFA230083488A /* LazyVStack.swift in Sources */,
 				B3B52EBC25CFB42400F71D03 /* ProgressView.swift in Sources */,
+				B3E1BBBE25E3EBE100D3515B /* Divider.swift in Sources */,
 				B3B52EB925CFABF300F71D03 /* Picker.swift in Sources */,
 				B3527D6925CFE6450022E1B9 /* Section.swift in Sources */,
 				B376D45325DFFD4B0083488A /* VStack.swift in Sources */,
@@ -319,6 +330,7 @@
 				B3527D5525CFC5FC0022E1B9 /* Stepper.swift in Sources */,
 				B302755525DFC621001D7703 /* HStack.swift in Sources */,
 				B3527D6C25CFEA480022E1B9 /* ScrollView.swift in Sources */,
+				B3E1BBC225E3ED7100D3515B /* EmptyView.swift in Sources */,
 				B3B52EA725CF942F00F71D03 /* GroupBox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
