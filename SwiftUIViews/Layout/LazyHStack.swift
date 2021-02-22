@@ -14,7 +14,7 @@ struct BasicLazyHStack: View {
             // 也就是只有在子视图即将出现在屏幕上的时候，再初始化子视图
             LazyHStack(alignment: .top, spacing: 10) {
                 ForEach(1...100, id: \.self) {
-                    Text("列 \($0)")
+                    Text("列 \($0)").font(.title)
                 }
             }
         }

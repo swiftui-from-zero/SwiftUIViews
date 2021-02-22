@@ -14,7 +14,7 @@ struct BasicLazyVStack: View {
             // 也就是只有在子视图即将出现在屏幕上的时候，再初始化子视图
             LazyVStack(alignment: .leading, spacing: 5) {
                 ForEach(1...100, id: \.self) {
-                    Text("行 \($0)")
+                    Text("行 \($0)").font(.title)
                 }
             }
         }
