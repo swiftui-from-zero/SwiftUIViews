@@ -12,40 +12,30 @@ struct ContentView: View {
         NavigationView {
             Form {
                 // ViewBuilder supports only no more than 10 static views in one container.
-                Section(header: Text("Controls")) {
-                    NavigationLink(destination: ControlListOne()) {
-                        Text("Button ... List")
-                    }
-                    NavigationLink(destination: ControlListTwo()) {
-                        Text("NavigationLink ... TabView")
-                    }
-                    NavigationLink(destination: ControlListThree()) {
-                        Text("Text ... Toggle")
-                    }
-                }
-                Section(header: Text("Layout")) {
-                    NavigationLink(
-                        destination: LayoutList(),
-                        label: {
-                            Text("GeometryReader ... ZStack")
-                        })
-                }
-                Section(header: Text("Paints")) {
-                    NavigationLink(
-                        destination: PaintsList(),
-                        label: {
-                            Text("Angular ... Radial")
-                        })
-                }
+                ControlSection()
+                LayoutSection()
+                PaintsSection()
+                OtherSection()
             }
             .navigationTitle("SwiftUIViews")
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+// MARK: Control
+struct ControlSection: View {
+    var body: some View {
+        Section(header: Text("Controls")) {
+            NavigationLink(destination: ControlListOne()) {
+                Text("Button ... List")
+            }
+            NavigationLink(destination: ControlListTwo()) {
+                Text("NavigationLink ... TabView")
+            }
+            NavigationLink(destination: ControlListThree()) {
+                Text("Text ... Toggle")
+            }
+        }
     }
 }
 
@@ -293,6 +283,19 @@ struct ControlListThree: View {
     }
 }
 
+// MARK: Layout
+struct LayoutSection: View {
+    var body: some View {
+        Section(header: Text("Layout")) {
+            NavigationLink(
+                destination: LayoutList(),
+                label: {
+                    Text("GeometryReader ... ZStack")
+                })
+        }
+    }
+}
+
 struct LayoutList: View {
     var body: some View {
         Form {
@@ -374,6 +377,19 @@ struct LayoutList: View {
     }
 }
 
+// MARK: Paints
+struct PaintsSection: View {
+    var body: some View {
+        Section(header: Text("Paints")) {
+            NavigationLink(
+                destination: PaintsList(),
+                label: {
+                    Text("Angular ... Radial")
+                })
+        }
+    }
+}
+
 struct PaintsList: View {
     var body: some View {
         Form {
@@ -399,5 +415,41 @@ struct PaintsList: View {
             .textCase(nil)
         }
         .navigationTitle("Angular ... Radial")
+    }
+}
+
+// MARK: Other
+struct OtherSection: View {
+    var body: some View {
+        Section(header: Text("Other")) {
+            NavigationLink(
+                destination: OtherList(),
+                label: {
+                    Text("Menu")
+                })
+        }
+    }
+}
+
+struct OtherList: View {
+    var body: some View {
+        Form {
+            Section(header: Text("Menu")) {
+                NavigationLink(destination: BasicMenu()) {
+                    Text("BasicMenu")
+                }
+                NavigationLink(destination: StylingMenu()) {
+                    Text("StylingMenu")
+                }
+            }
+            .textCase(nil)
+        }
+        .navigationTitle("Menu")
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
 }
