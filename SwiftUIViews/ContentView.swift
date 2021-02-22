@@ -30,6 +30,13 @@ struct ContentView: View {
                             Text("GeometryReader ... ZStack")
                         })
                 }
+                Section(header: Text("Paints")) {
+                    NavigationLink(
+                        destination: PaintsList(),
+                        label: {
+                            Text("Angular ... Radial")
+                        })
+                }
             }
             .navigationTitle("SwiftUIViews")
         }
@@ -364,5 +371,33 @@ struct LayoutList: View {
             .textCase(nil)
         }
         .navigationTitle("GeometryReader ... ZStack")
+    }
+}
+
+struct PaintsList: View {
+    var body: some View {
+        Form {
+            Section(header: Text("AngularGradient")) {
+                NavigationLink(destination: BasicAngularGradient()) {
+                    Text("BasicAngularGradient")
+                }
+            }
+            .textCase(nil)
+
+            Section(header: Text("LinearGradient")) {
+                NavigationLink(destination: BasicLinearGradient()) {
+                    Text("BasicLinearGradient")
+                }
+            }
+            .textCase(nil)
+
+            Section(header: Text("RadialGradient")) {
+                NavigationLink(destination: BasicRadialGradient()) {
+                    Text("RadialGradient")
+                }
+            }
+            .textCase(nil)
+        }
+        .navigationTitle("Angular ... Radial")
     }
 }

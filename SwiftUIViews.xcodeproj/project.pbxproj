@@ -29,6 +29,9 @@
 		B376D45025DFFABE0083488A /* Spacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B376D44F25DFFABE0083488A /* Spacer.swift */; };
 		B376D45325DFFD4B0083488A /* VStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B376D45225DFFD4B0083488A /* VStack.swift */; };
 		B376D45625DFFF8B0083488A /* ScrollViewReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B376D45525DFFF8B0083488A /* ScrollViewReader.swift */; };
+		B376D46025E1026F0083488A /* AngularGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B376D45F25E1026F0083488A /* AngularGradient.swift */; };
+		B376D46425E1033F0083488A /* LinearGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B376D46325E1033F0083488A /* LinearGradient.swift */; };
+		B376D46725E1039C0083488A /* RadialGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B376D46625E1039C0083488A /* RadialGradient.swift */; };
 		B3B52E9725CF82EF00F71D03 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B52E9625CF82EF00F71D03 /* ColorPicker.swift */; };
 		B3B52E9A25CF856D00F71D03 /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B52E9925CF856D00F71D03 /* DatePicker.swift */; };
 		B3B52E9D25CF8A5300F71D03 /* DisclosureGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B52E9C25CF8A5300F71D03 /* DisclosureGroup.swift */; };
@@ -71,6 +74,9 @@
 		B376D44F25DFFABE0083488A /* Spacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacer.swift; sourceTree = "<group>"; };
 		B376D45225DFFD4B0083488A /* VStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStack.swift; sourceTree = "<group>"; };
 		B376D45525DFFF8B0083488A /* ScrollViewReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewReader.swift; sourceTree = "<group>"; };
+		B376D45F25E1026F0083488A /* AngularGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngularGradient.swift; sourceTree = "<group>"; };
+		B376D46325E1033F0083488A /* LinearGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearGradient.swift; sourceTree = "<group>"; };
+		B376D46625E1039C0083488A /* RadialGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialGradient.swift; sourceTree = "<group>"; };
 		B3B52E9625CF82EF00F71D03 /* ColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
 		B3B52E9925CF856D00F71D03 /* DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
 		B3B52E9C25CF8A5300F71D03 /* DisclosureGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclosureGroup.swift; sourceTree = "<group>"; };
@@ -137,6 +143,7 @@
 				B34D2AAE25CEE84D000361B0 /* ContentView.swift */,
 				B34D2AC525CEEA4A000361B0 /* Controls */,
 				B3396FA825DD171F0025C7E3 /* Layout */,
+				B376D45E25E102480083488A /* Paints */,
 				B34D2AB025CEE84F000361B0 /* Assets.xcassets */,
 				B34D2AB525CEE84F000361B0 /* Info.plist */,
 				B34D2AB225CEE84F000361B0 /* Preview Content */,
@@ -182,6 +189,16 @@
 				B3B52EB225CFA69B00F71D03 /* Toggle.swift */,
 			);
 			path = Controls;
+			sourceTree = "<group>";
+		};
+		B376D45E25E102480083488A /* Paints */ = {
+			isa = PBXGroup;
+			children = (
+				B376D45F25E1026F0083488A /* AngularGradient.swift */,
+				B376D46325E1033F0083488A /* LinearGradient.swift */,
+				B376D46625E1039C0083488A /* RadialGradient.swift */,
+			);
+			path = Paints;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,11 +274,13 @@
 				B3B52EA325CF908F00F71D03 /* Form.swift in Sources */,
 				B3527D6625CFD3F60022E1B9 /* TextField.swift in Sources */,
 				B3B52E9725CF82EF00F71D03 /* ColorPicker.swift in Sources */,
+				B376D46425E1033F0083488A /* LinearGradient.swift in Sources */,
 				B3B52EA025CF8C5400F71D03 /* EditButton.swift in Sources */,
 				B376D45025DFFABE0083488A /* Spacer.swift in Sources */,
 				B3B52EC325CFBA6B00F71D03 /* Slider.swift in Sources */,
 				B3B52EAD25CFA30B00F71D03 /* Link.swift in Sources */,
 				B3B52EB025CFA67500F71D03 /* List.swift in Sources */,
+				B376D46725E1039C0083488A /* RadialGradient.swift in Sources */,
 				B3B52E9D25CF8A5300F71D03 /* DisclosureGroup.swift in Sources */,
 				B376D44A25DFF8CF0083488A /* LazyHStack.swift in Sources */,
 				B34D2AC325CEE9EC000361B0 /* Button.swift in Sources */,
@@ -269,6 +288,7 @@
 				B3527D5C25CFCDDC0022E1B9 /* OutlineGroup.swift in Sources */,
 				B34D2AAD25CEE84D000361B0 /* SwiftUIViewsApp.swift in Sources */,
 				B3B52EB325CFA69B00F71D03 /* Toggle.swift in Sources */,
+				B376D46025E1026F0083488A /* AngularGradient.swift in Sources */,
 				B302755225DFB79F001D7703 /* GeometryReader.swift in Sources */,
 				B3527D5825CFCA8B0022E1B9 /* TabView.swift in Sources */,
 				B3B52EB625CFA8C600F71D03 /* Text.swift in Sources */,
