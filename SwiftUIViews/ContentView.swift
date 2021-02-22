@@ -322,9 +322,29 @@ struct LayoutList: View {
             }
             .textCase(nil)
 
+            Section(header: Text("LazyHGrid")) {
+                NavigationLink(destination: BasicLazyHGrid()) {
+                    Text("BasicLazyHGrid")
+                }
+                NavigationLink(destination: PinnedLazyHGrid()) {
+                    Text("PinnedLazyHGrid")
+                }
+            }
+            .textCase(nil)
+
             Section(header: Text("LazyHStack")) {
                 NavigationLink(destination: BasicLazyHStack()) {
                     Text("BasicLazyHStack")
+                }
+            }
+            .textCase(nil)
+
+            Section(header: Text("LazyVGrid")) {
+                NavigationLink(destination: BasicLazyVGrid()) {
+                    Text("BasicLazyVGrid")
+                }
+                NavigationLink(destination: PinnedLazyVGrid()) {
+                    Text("PinnedLazyVGrid")
                 }
             }
             .textCase(nil)

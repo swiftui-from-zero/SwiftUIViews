@@ -51,6 +51,8 @@
 		B3E1BBBB25E3E77300D3515B /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E1BBBA25E3E77300D3515B /* Shapes.swift */; };
 		B3E1BBBE25E3EBE100D3515B /* Divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E1BBBD25E3EBE100D3515B /* Divider.swift */; };
 		B3E1BBC225E3ED7100D3515B /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E1BBC125E3ED7100D3515B /* EmptyView.swift */; };
+		B3E1BBC525E3F28600D3515B /* LazyHGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E1BBC425E3F28600D3515B /* LazyHGrid.swift */; };
+		B3E1BBC925E3FE7F00D3515B /* LazyVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E1BBC825E3FE7F00D3515B /* LazyVGrid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +102,8 @@
 		B3E1BBBA25E3E77300D3515B /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 		B3E1BBBD25E3EBE100D3515B /* Divider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Divider.swift; sourceTree = "<group>"; };
 		B3E1BBC125E3ED7100D3515B /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		B3E1BBC425E3F28600D3515B /* LazyHGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyHGrid.swift; sourceTree = "<group>"; };
+		B3E1BBC825E3FE7F00D3515B /* LazyVGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVGrid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +122,9 @@
 			children = (
 				B302755125DFB79F001D7703 /* GeometryReader.swift */,
 				B302755425DFC621001D7703 /* HStack.swift */,
+				B3E1BBC425E3F28600D3515B /* LazyHGrid.swift */,
 				B376D44925DFF8CF0083488A /* LazyHStack.swift */,
+				B3E1BBC825E3FE7F00D3515B /* LazyVGrid.swift */,
 				B376D44C25DFFA230083488A /* LazyVStack.swift */,
 				B376D45525DFFF8B0083488A /* ScrollViewReader.swift */,
 				B376D44F25DFFABE0083488A /* Spacer.swift */,
@@ -294,7 +300,9 @@
 				B3B52EA325CF908F00F71D03 /* Form.swift in Sources */,
 				B3527D6625CFD3F60022E1B9 /* TextField.swift in Sources */,
 				B3B52E9725CF82EF00F71D03 /* ColorPicker.swift in Sources */,
+				B3E1BBC525E3F28600D3515B /* LazyHGrid.swift in Sources */,
 				B376D46425E1033F0083488A /* LinearGradient.swift in Sources */,
+				B3E1BBC925E3FE7F00D3515B /* LazyVGrid.swift in Sources */,
 				B3B52EA025CF8C5400F71D03 /* EditButton.swift in Sources */,
 				B376D45025DFFABE0083488A /* Spacer.swift in Sources */,
 				B3B52EC325CFBA6B00F71D03 /* Slider.swift in Sources */,
