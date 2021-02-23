@@ -21,5 +21,7 @@ struct NavigationView_Previews: PreviewProvider {
         // 如何在 NavigationView 中实现编辑模式的选择
         // 详见 NavigationView.swift
         SelectionList()
+        // 注意，嵌套 Navigation 的时候只需要一个 NavigationView，
+        // 不然会导致在上方出现多个返回的视图。
     }
 }
