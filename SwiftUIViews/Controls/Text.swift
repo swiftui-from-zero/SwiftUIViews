@@ -32,6 +32,7 @@ struct BasicText: View {
                 .frame(width: 100)
                 .lineLimit(1)
             // 可以这样使用非系统默认的字体
+            // 在 UIFont.familyNames 中可以查看所有可以使用的字体
             Text("Text(\"Hello World!\")")
                 .font(.custom("Menlo", size: 17))
         }
